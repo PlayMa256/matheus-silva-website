@@ -1,0 +1,45 @@
+@import "normalize";
+@font-face{
+	font-family: "Arca";
+	src: url('../fonts/Arca-Heavy.ttf');
+}
+body, html{
+	font-family: "Arca";
+	width:100vw;
+}
+header{
+	height:377px;
+	background-image: url('../images/header_bg.jpg');
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width:100vw;
+	.header-icons{
+		display:flex;
+		width:400px;
+		justify-content: space-between;
+		a{
+			padding:12px;	
+			&:hover{
+				border: 1px solid #384877;
+				background-color: rgba(24,39,72,.53);
+			}
+		}
+	}
+	h1{
+		color:#FFFFFF;
+	}
+}
+.content-wrapper{
+	width:100vw;
+	.centered-content{
+		width:960px;
+		margin:0 auto;
+		background:red;
+		h2{
+			margin:0;
+			padding:0;
+		}
+	}
+}
