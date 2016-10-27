@@ -39,23 +39,37 @@ header{
 	.centered-content{
 		width:960px;
 		margin:0 auto;
-		border:1px solid #333;
-		.content-title{
-			font-size:1.6rem;
+		section{
+			margin-bottom:20px;
+			&:first-child{
+				margin-top:10px;
+			}
+			h2{
+				margin:0px 0 0 0;
+				font-size: 2rem;
+				color: $section-title-color;
+			}
+			.content{
+				.content-title{
+					font-size:1.6rem;
+				}
+				h3{
+					margin:5px 0 0 0;
+					text-transform: uppercase;
+				}
+				p{
+					margin:6px 0 0 0;
+				}
+				ul{
+					margin:5px 0 0 23px;
+					padding:0;
+					font-size:1.2rem;
+					li{
+
+					}
+				}
+			}
 		}
-		h2{
-			margin:5px 0 0 0;
-		}
-		h3{
-			margin:5px 0 0 0;
-		}
-		p{
-			margin:6px 0 0 0;
-		}
-		h2{
-			font-size: 2rem;
-			color: $section-title-color;
-			
-		}
+
 	}
 }
