@@ -1,13 +1,16 @@
 @import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
 @font-face{
 	font-family: "Arca";
 	src: url('../fonts/Arca-Heavy.ttf');
 }
+$section-title-color: #3772a7;
 body, html{
-	font-family: "Arca";
 	width:100vw;
+	font-family: 'Didact Gothic', sans-serif;
 }
 header{
+	font-family: "Arca";
 	height:377px;
 	background-image: url('../images/header_bg.jpg');
 	display:flex;
@@ -36,10 +39,23 @@ header{
 	.centered-content{
 		width:960px;
 		margin:0 auto;
-		background:red;
+		border:1px solid #333;
+		.content-title{
+			font-size:1.6rem;
+		}
 		h2{
-			margin:0;
-			padding:0;
+			margin:5px 0 0 0;
+		}
+		h3{
+			margin:5px 0 0 0;
+		}
+		p{
+			margin:6px 0 0 0;
+		}
+		h2{
+			font-size: 2rem;
+			color: $section-title-color;
+			
 		}
 	}
 }
