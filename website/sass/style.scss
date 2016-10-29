@@ -4,14 +4,9 @@
 	font-family: "Arca";
 	src: url('../fonts/Arca-Heavy.ttf');
 }
+@import "_global";
 $section-title-color: #3772a7;
-body, html{
-	width:100vw;
-	font-family: Helvetica;
-}
-h1, h2, h3{
-	font-family: 'Didact Gothic', sans-serif;
-}
+
 header{
 	height:377px;
 	background-image: url('../images/header_bg.jpg');
@@ -56,20 +51,21 @@ header{
 			}
 			.content{
 				.content-title{
-					font-size:1.6rem;
+					font-size:1.25rem;
 				}
 				h3{
 					margin:5px 0 0 0;
 					text-transform: uppercase;
 				}
 				p{
-					margin:6px 0 0 0;
+					margin:6px 0 10px 0;
 					font-weight: 1.1rem;
+					text-align: justify;
 				}
 				ul{
 					margin:5px 0 0 23px;
 					padding:0;
-					font-size:1.1rem;
+					font-size:1.0rem;
 					li{
 						ul{
 							margin-top:3px;
@@ -77,8 +73,14 @@ header{
 						}
 					}
 				}
+				a{
+					text-decoration: none;
+					color:#0095DB;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
 			}
 		}
-
 	}
 }
