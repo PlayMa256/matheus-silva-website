@@ -17,7 +17,7 @@ header{
 	width:100vw;
 	h1{
 		font-family: "Arca";	
-		
+		color:#FFFFFF;
 		@media screen and (max-width: 520px) {
 			font-size:1.8rem;
 		}
@@ -43,9 +43,32 @@ header{
 				background-color: rgba(24,39,72,.53);
 			}
 		}
+	
 	}
-	h1{
-		color:#FFFFFF;
+	.lang-icons{
+		.flag{
+			display: inline-table;
+			height: 24px;
+			width:24px;
+		}
+		.usa-flag{
+			background: url('../images/usa-flag-24.png');
+		}
+		.br-flag{
+			background: url('../images/brazil-flag-24.png');	
+		}
+		@media screen and (max-width: 500px){
+			.flag{
+				height: 48px;
+				width:48px;
+			}
+			.usa-flag{
+				background: url('../images/usa-flag-48.png');
+			}
+			.br-flag{
+				background: url('../images/brazil-flag-48.png');	
+			}	
+		}		
 	}
 }
 .content-wrapper{
