@@ -29,3 +29,7 @@ gulp.task('styles', () => {
 gulp.task('watch', () =>{
   gulp.watch(paths.src, ['styles']);
 });
+
+gulp.task('build', () => {
+  gulp.start('styles');	
+});
