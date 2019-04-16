@@ -27,7 +27,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('watch', () =>{
-  gulp.watch(paths.src, ['styles']);
+  gulp.watch(paths.src, gulp.series('styles'));
 });
 
 gulp.task('build', () => {
